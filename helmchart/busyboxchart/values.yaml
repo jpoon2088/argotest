@@ -3,6 +3,6 @@
 deployment:
   name: test-busybox
   app: test-busybox
-  replicas: 1
+  replicas: 2
   image: busybox
   containerPort: 80
