@@ -14,8 +14,6 @@ spec:
       labels:
         app: {{ .Values.deployment.app }}
     spec:
-      nodeSelector:
-        hascpu: "true"
       containers:
       - name: {{ .Values.deployment.name }}
         image: {{ .Values.deployment.image }}
