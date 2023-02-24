@@ -1,8 +1,8 @@
 ## namespace is now defined in execution with flag --namespace with helm
 
 deployment:
-  name: test-busybox
-  app: test-busybox
+  name: test-nginx
+  app: test-nginx
   replicas: 2
-  image: busybox
+  image: nginx
   containerPort: 80
