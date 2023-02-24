@@ -4,5 +4,5 @@ deployment:
   name: test-busybox
   app: test-busybox
   replicas: 1
-  image: busybox:latest
+  image: alpine:latest
   containerPort: 80
