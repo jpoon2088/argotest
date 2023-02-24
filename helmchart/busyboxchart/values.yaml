@@ -1,0 +1,8 @@
+## namespace is now defined in execution with flag --namespace with helm
+
+deployment:
+  name: test-busybox
+  app: test-busybox
+  replicas: 1
+  image: busybox
+  containerPort: 80
