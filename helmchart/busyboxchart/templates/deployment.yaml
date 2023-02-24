@@ -17,5 +17,6 @@ spec:
       containers:
       - name: {{ .Values.deployment.name }}
         image: {{ .Values.deployment.image }}
+        command: [ "tail -f /dev/null" ]
         ports:
         - containerPort: {{ .Values.deployment.containerPort }}
