@@ -17,7 +17,6 @@ spec:
       containers:
       - name: {{ .Values.deployment.name }}
         image: {{ .Values.deployment.image }}
-        command: [ "/bin/bash", "-c", "--" ]
-        args: [ "while true; do sleep 100000; done;" ]
+        command: [ "tail -f /dev/null" ]
         ports:
         - containerPort: {{ .Values.deployment.containerPort }}
