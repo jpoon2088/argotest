@@ -4,5 +4,5 @@ deployment:
   name: test-busybox
   app: test-busybox
   replicas: 1
-  image: alpine:latest
+  image: ubuntu:20.04
   containerPort: 80
