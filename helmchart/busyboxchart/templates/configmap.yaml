@@ -5,7 +5,7 @@ metadata:
 data:
   config.json: |-
     {
-{{- range $key, $val := .Values.json }}
+{{- range $key, $val := .Values.configmap.json }}
 {{ $key | quote | indent 6}}: {{ $val | quote }}
 {{- end}}
     }
