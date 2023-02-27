@@ -21,9 +21,9 @@ spec:
         ports:
         - containerPort: {{ .Values.deployment.containerPort }}
         volumeMounts:
-          - name: config 
+          - name: {{ .Values.deployment.mountname }}
             mountPath: /tmp/config.json
       volumes:
-        - name: config
+        - name: {{ .Values.deployment.mountname }}
           configMap:
-            name: jksconfig
+            name: {{ .Values.configmap.name }}
