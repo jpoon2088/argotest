@@ -1,5 +1,12 @@
 ## namespace is now defined in execution with flag --namespace with helm
 
+configmap:
+  name: test
+  json:
+    key1: val1
+    key2: val2
+    key3: val3  
+
 deployment:
   name: test-busybox
   app: test-busybox
