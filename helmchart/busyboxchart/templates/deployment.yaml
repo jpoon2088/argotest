@@ -14,11 +14,10 @@ spec:
       labels:
         app: {{ .Values.deployment.app }}
     spec:
-      nodeSelector:
-        hascpu: "true"
       containers:
       - name: {{ .Values.deployment.name }}
         image: {{ .Values.deployment.image }}
+        command: [ "sh", "-c", "tail -f /dev/null" ]
         ports:
         - containerPort: {{ .Values.deployment.containerPort }}
         volumeMounts:
