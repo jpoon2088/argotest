@@ -22,7 +22,7 @@ spec:
         - containerPort: {{ .Values.deployment.containerPort }}
         volumeMounts:
           - name: {{ .Values.deployment.mountname }}
-            mountPath: /tmp/config.json
+            mountPath: {{ .Values.deployment.mountPath }}
       volumes:
         - name: {{ .Values.deployment.mountname }}
           configMap:
